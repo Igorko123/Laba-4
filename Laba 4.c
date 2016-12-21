@@ -5,7 +5,7 @@ using namespace std;
 
 class Geometric
 {
-public:
+        public:
 	virtual double Square()
 	{
 		return 0;
@@ -16,7 +16,7 @@ public:
 	}
 };
 	class D2 : public Geometric
-	{
+{
 	public:
 		virtual double Square() 
 		{
@@ -26,128 +26,128 @@ public:
 		{
 			return 0;
 		}
-	};
+};
 
-		class  Circle : public D2
-		{
-		public:
-			int Get()
-			{
-				cout << "Введiть радiус: ";
-				cin >> r;
-				return 0;
-			}
-			double Square()
-			{
-				return 3.14*r*r;
-			}
-		private:
-			int r;
-		};
-
-		class Triangle : public D2
-		{
-		public:
-			int Get()
-			{
-				cout << "Введiть сторону: ";
-				cin >> a;
-				cout << "Введiть висоту: ";
-				cin >> h;
-				return 0;
-			}
-			double Square()
-			{
-				return 0.5*a*h;
-			}
-		private:
-			int a, h;
-		};
-
-	class D3 : public Geometric
+	class  Circle : public D2
 	{
 	public:
-		virtual int Get()
+		int Get()
 		{
+			cout << "Введiть радiус: ";
+			cin >> r;
 			return 0;
 		}
-		virtual double Square()
+		double Square()
 		{
-			return 0;
+			return 3.14*r*r;
 		}
-		virtual double Extend()
-		{
-			return 0;
-		}
+	private:
+		int r;
 	};
 
-		class Cylinder : public D3
+	class Triangle : public D2
+	{
+	public:
+		int Get()
 		{
-		public:
-			int Get()
-			{
-				cout << "Введiть радiус: ";
-				cin >> r;
-				cout << "Введiть висоту: ";
-				cin >> h;
-				return 0;
-			}
-			double Square()
-			{
-				return 3.14*r*r;
-			}
-			double Extend()
-			{
-				return 3.14*r*r*h;
-			}
-		private:
-			int r, h;
-		};
-
-		class Sphere : public D3
+			cout << "Введiть сторону: ";
+			cin >> a;
+			cout << "Введiть висоту: ";
+			cin >> h;
+			return 0;
+		}
+		double Square()
 		{
-		public:
-			int Get()
-			{
-				cout << "Введiть радiус: ";
-				cin >> r;
-				return 0;
-			}
-			double Square()
-			{
-				return 4*3.14*r*r;
-			}
+			return 0.5*a*h;
+		}
+	private:
+		int a, h;
+	};
 
-			double Extend()
-			{
-				return 4 / 3 * 3.14*r*r*r;
-			}
-		private:
-			int r;
-		};
+class D3 : public Geometric
+{
+public:
+	virtual int Get()
+	{
+		return 0;
+	}
+	virtual double Square()
+	{
+		return 0;
+	}
+	virtual double Extend()
+	{
+		return 0;
+	}
+};
 
-		class Cone : public D3
+	class Cylinder : public D3
+	{
+	public:
+		int Get()
 		{
-		public:
-			int Get()
-			{
-				cout << "Введiть радiус: ";
-				cin >> r;
-				cout << "Введiть висоту: ";
-				cin >> h;
-				return 0;
-			}
-			double Square()
-			{
-				return 3.14*r*r;
-			}
-			double Extend()
-			{
-				return 3.14/3*r*r*h;
-			}
-		private:
-			int r, h;
-		};
+			cout << "Введiть радiус: ";
+			cin >> r;
+			cout << "Введiть висоту: ";
+			cin >> h;
+			return 0;
+		}
+		double Square()
+		{
+			return 3.14*r*r;
+		}
+		double Extend()
+		{
+			return 3.14*r*r*h;
+		}
+	private:
+		int r, h;
+	};
+
+	class Sphere : public D3
+	{
+	public:
+		int Get()
+		{
+			cout << "Введiть радiус: ";
+			cin >> r;
+			return 0;
+		}
+		double Square()
+		{
+			return 4*3.14*r*r;
+		}
+
+		double Extend()
+		{
+			return 4 / 3 * 3.14*r*r*r;
+		}
+	private:
+		int r;
+	};
+
+	class Cone : public D3
+	{
+	public:
+		int Get()
+		{
+			cout << "Введiть радiус: ";
+			cin >> r;
+			cout << "Введiть висоту: ";
+			cin >> h;
+			return 0;
+		}
+		double Square()
+		{
+			return 3.14*r*r;
+		}
+		double Extend()
+		{
+			return 3.14/3*r*r*h;
+		}
+	private:
+		int r, h;
+	};
 
 int main()
 {
@@ -184,7 +184,7 @@ int main()
 		cout << (ptr3->Square()) << endl;
 		cout << (ptr3->Extend())<<endl;
 	    break;
-	}
+    }
 	    
 	case 4:
 		{
@@ -193,7 +193,7 @@ int main()
 		cout << (ptr4->Square()) << endl;
 		cout << (ptr4->Extend()) << endl;
 		break;
-	}
+    }
 	
 	case 5:
 		{
@@ -202,9 +202,9 @@ int main()
 		cout << (ptr5->Square()) << endl;
 		cout << (ptr5->Extend()) << endl;
 		break;
-}
-	default:
-		cout << "Неправильно набраний номер" <<endl;
-    return 0;
-   }
+     }
+default:
+	cout << "Неправильно набраний номер" <<endl;
+return 0;
+     }
 }
