@@ -1,0 +1,86 @@
+.menu {
+  width: 739px;
+  height: 100px;
+  margin-top: 25px;
+  float: right;
+}
+.menu .MenuItems {
+  display: flex;
+}
+.menu .MenuItems li {
+  list-style: none;
+}
+.menu .MenuItems li a {
+  display: block;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  color: black;
+  transition: 0.7s ease;
+  margin-right: -5px;
+  background: rgb(232, 231, 164);
+}
+.menu .MenuItems li a:hover {
+  background: rgb(232, 231, 164);
+  color: white;
+  transition: 0.7s ease;
+}
+.DropdownMenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+
+  background: rgb(232, 231, 164);
+}
+li:hover .DropdownMenu {
+  display: block;
+}
+
+
+
+  footer {
+    width: 100%;
+    background-color: rgb(232, 231, 164);
+    padding: 20px 0px;
+    margin-bottom: auto;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+  }
+
+  h1 {
+  text-shadow: 1px 1px 0 hsl(60, 63%, 58%),
+               2px 2px 0 hsl(60, 63%, 58%),
+               3px 3px 0 hsl(60, 63%, 58%),
+               4px 4px 0 hsl(60, 63%, 58%),
+               5px 5px 0 hsl(60, 63%, 58%),
+               6px 6px 0 hsl(60, 63%, 58%),
+               7px 7px 0 hsl(60, 63%, 58%),
+               8px 8px 0 hsl(60, 63%, 58%);
+  color: hsl(61, 100%, 50%);
+  transition: all 1s;
+  }
+  h1:hover {
+    text-shadow: 1px -1px 0 hsl(60, 63%, 58%),
+               2px -2px 0 hsl(60, 63%, 58%),
+               3px -3px 0 hsl(60, 63%, 58%),
+               4px -4px 0 hsl(60, 63%, 58%),
+               5px -5px 0 hsl(60, 63%, 58%),
+               6px -6px 0 hsl(60, 63%, 58%),
+               7px -7px 0 hsl(60, 63%, 58%),
+               8px -8px 0 hsl(60, 63%, 58%);
+      color: hsl(61, 100%, 50%);
+    }
+
+    ul  {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
