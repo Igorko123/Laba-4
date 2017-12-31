@@ -1,0 +1,25 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+admin.html
+contact.html
+news.html
+comment.html
+program.html
+index.css
+admin.css
+contact.css
+news.css
+comment.css
+program.css
+
+
+css/bootstrap.css
+css/bootstrap.min.css
+js/bootstrap.min.js
+js/bootstrap.js
+
+
+FALLBACK:
+Error.html
